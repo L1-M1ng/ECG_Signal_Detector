@@ -1,6 +1,6 @@
 # Heart_Rate_Datector
 
-
+@Designed by Dawn
 
 ## 1.Informations
 
@@ -10,4 +10,5 @@
 
 ## 2.Features
 
-1. Read the signal by AD8232 module and disply the signal waveform on a TFT-LCD screen
+1. Read the signal by AD8232 module and disply the signal waveform on a TFT-LCD screen.
+2. Calculate the BPM by using the time between peaks.
