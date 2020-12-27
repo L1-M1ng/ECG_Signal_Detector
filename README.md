@@ -2,7 +2,7 @@
 
 > 2020秋感测综设-心电检测器
 
-@Design by Dawn
+@Designed by Dawn
 
 ## 1. 主要信息
 
