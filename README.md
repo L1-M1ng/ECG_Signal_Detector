@@ -6,7 +6,7 @@
 
 1. Master chip: STM32RCT6
 2. Slave module：AD8232, TFT-LCD 1.3 '
-3. software: MDK5 
+3. Software: MDK5 
 
 ## 2.Features
 
