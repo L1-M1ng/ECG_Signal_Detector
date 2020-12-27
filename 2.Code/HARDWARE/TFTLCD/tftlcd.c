@@ -4,8 +4,7 @@
 #include "font.h"
 #include "spi.h"
 #include "alientek_log.h"
-
- 
+#include "usart.h"
 
 //LCD缓存大小设置，修改此值时请注意！！！！修改这两个值时可能会影响以下函数	LCD_Clear/LCD_Fill/LCD_DrawLine
 #define LCD_TOTAL_BUF_SIZE	(240*240*2)
@@ -783,4 +782,29 @@ void Display_ALIENTEK_LOGO(u16 x, u16 y)
     LCD_PWR = 1;
 }
 
+void Display_Adc_Buffer(u16 *Buffer)
+{
+	
+	u16 p=0;
+	u8 i;
+	u16 x_point_position=1;
+	
+	LCD_Clear(WHITE);
+	POINT_COLOR = BLACK;
+	LCD_DrawLine(0,40,240,40); //top border line
+	LCD_DrawLine(0,200,240,200);  //bottom border line
+	LCD_DrawLine(0,120,240,120);	//middle line
+	LCD_ShowString(0, 41, 240, 16, 16, "3.3V");
+	LCD_ShowString(0, 201, 240, 16, 16, "0V");
+	LCD_ShowString(0, 121, 240, 16, 16, "1.15V");
+	LCD_Draw_ColorPoint(120,120,BLACK);
+	
+	for(i=0;i<80;i++)
+	{
+		POINT_COLOR = BLUE;
+		LCD_DrawLine((i+1)*3,200-Buffer[i],(i+2)*3,200-Buffer[i+1]);
+		printf("%d\r\n",Buffer[p]);
+		//x_point_position=x_point_position+3;	
+	}
+}
 

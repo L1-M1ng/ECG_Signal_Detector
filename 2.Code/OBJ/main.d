@@ -37,3 +37,4 @@
 ..\obj\main.o: ..\HARDWARE\ADC\adc.h
 ..\obj\main.o: ..\HARDWARE\AD8232\AD8232.h
 ..\obj\main.o: ..\HARDWARE\TIM\timer.h
+..\obj\main.o: ..\HARDWARE\TIM\timer.h

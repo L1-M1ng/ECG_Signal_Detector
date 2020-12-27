@@ -34,3 +34,5 @@
 ..\obj\tftlcd.o: ..\HARDWARE\TFTLCD\font.h
 ..\obj\tftlcd.o: ..\HARDWARE\SPI\spi.h
 ..\obj\tftlcd.o: ..\HARDWARE\TFTLCD\alientek_log.h
+..\obj\tftlcd.o: ..\SYSTEM\usart\usart.h
+..\obj\tftlcd.o: E:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

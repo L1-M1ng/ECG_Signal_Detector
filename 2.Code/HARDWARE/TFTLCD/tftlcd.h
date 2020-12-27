@@ -71,6 +71,8 @@ void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,char *p);					//œ‘ 
 void LCD_Show_Image(u16 x, u16 y, u16 width, u16 height, const u8 *p);					//œ‘ æÕº∆¨
 void Display_ALIENTEK_LOGO(u16 x,u16 y);												//œ‘ æALIENTEK LOGO
 
+void Display_Adc_Buffer(u16 *Buffer);
+
 #endif
 
 

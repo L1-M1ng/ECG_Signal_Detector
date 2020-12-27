@@ -32,3 +32,9 @@
 ..\obj\timer.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\timer.o: ..\STM32F10x_FWLib\inc\misc.h
 ..\obj\timer.o: ..\SYSTEM\delay\delay.h
+..\obj\timer.o: ..\SYSTEM\usart\usart.h
+..\obj\timer.o: ..\HARDWARE\TFTLCD\tftlcd.h
+..\obj\timer.o: ..\HARDWARE\SPI\spi.h
+..\obj\timer.o: ..\HARDWARE\ADC\adc.h
+..\obj\timer.o: ..\HARDWARE\AD8232\AD8232.h
+..\obj\timer.o: ..\HARDWARE\TIM\timer.h

@@ -26,7 +26,7 @@ u8 AD8232_Get_Val(void)
 		delay_ms(5);
 	}
 	temp_val/=AD8232_READ_TIMES;//得到平均值 
-	printf("%d\r\n",temp_val);
+	//printf("%d\r\n",temp_val);
 	//if(temp_val>4096)temp_val=4096;
 	return temp_val/26;//(u8)(160-(temp_val/26));
 }
