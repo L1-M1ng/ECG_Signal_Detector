@@ -17,11 +17,11 @@
 
    导联接法：
 
-   <img src="3.Image/导联接法.jpg" style="zoom:50%;" />
+   <img src="3.Image/导联接法.jpg" style="zoom:20%;" />
 
    实现效果：
 
-   <img src="3.Image/心电图显示效果.jpg" style="zoom: 33%;" />
+   <img src="3.Image/心电图显示效果.jpg" style="zoom: 20%;" />
 
 2. 采用动态阈值法实时测量心率，实时更新。
 
