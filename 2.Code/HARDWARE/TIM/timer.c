@@ -55,6 +55,7 @@ void TIM2_IRQHandler(void)
 
 ////----------------------------实时更新显示
 		Adc_Buffer[Adc_buffer_Store_Position]=AD8232_Get_Val();
+		printf("%c",Adc_Buffer[Adc_buffer_Store_Position]);
 		POINT_COLOR = BLUE;
 		LCD_DrawLine(x_point_location,200-Adc_Buffer[Adc_buffer_Store_Position-1],x_point_location+3,200-Adc_Buffer[Adc_buffer_Store_Position]);	
 		Beat_Pulse_Sum+=Adc_Buffer[Adc_buffer_Store_Position];
